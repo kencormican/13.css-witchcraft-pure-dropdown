@@ -1,0 +1,49 @@
+Pure CSS Dropdown: The Big Reveal
+*********************************
+ 
+What is it? A pure CSS menu with list items.
+What does it do? It falls down smoothly and shows the list items .
+How do you use it? You can use it navigation or in the footer
+ 
+
+This final lab is all about controlling the visibility of the dropdown menu when you hover over the button.
+So one thing we're doing here, is we're creating an external div, a wrapper div, with a class of "dropdown" that will control the visibility of all the elements.
+So we'll target that dropdown.
+So we're going to set the width of this div to 150 px, which matches the width of the button.
+And we're going to set the position to "relative", so it will be relative to the fixed position of the button itself.
+Let's do a refresh.
+And we can see the elements are positioned below the dropdown button.
+So we want to hide these, and we want to affect some hover activity on them.
+So we're going to use the dropdown, the hover associated with the dropdown.
+Now, when you hover over the dropdown in this case, the button will be affected. So we're targeting the button here. Notice the syntax.
+So we're changing the background color of the button slightly. It's a visual indicator to the user that we've hovered.
+Do a refresh.
+You can see it's getting slightly darker there.
+It's a very common technique as well as subtle. All good UX is subtle, so keep your changes subtle.
+But you'll notice that our dropdown menu is visible all the time.
+By default, we want to hide it and only make it visible when you hover over the button.
+So to do that, we'll do a translation or transformation. And we'll use a translation.
+So by default, it'll be set at "- 100%". By default, it will be set off the screen. It'll be hidden if you use a negative number.
+Again, it's a common technique.
+So you can see it's almost hidden, but what's actually happening is it's sitting on top of our button.
+And one of the things we need to do to fix that is eventually we will use a z-index.
+But before that, we need to do a translation when you hover over. So we'll will do a translation, so it appears once we do a hover.
+And we're going to do a "translateY", so we're going to translate on the y-axis only. We don't want to move it out along the x-axis.
+Earlier, we were playing around with translate and using the X and the Y values. Now we're specifically translating on the y-axis only.
+So we've used a translation to set the default positioning of the dropdown menu to "-100%", which sets it in as much as it can off the screen.
+We then like to use a hover so that when we hover over the dropdown, a dropdown menu appears.
+So again, we'll use a transformation. And we use a "translateY" again, and we'll set it to "0". So "0" will bring it to its visible position.
+You can see it there, it's working as you hover, but the transitions are jerky.
+So we will use an easing function to make that more visually appealing.
+To fix this, we will use another transform.
+So let's go back to our dropdown menu.
+And we use a transition.
+And as part of our transition, we allow the transformation to take place over 0.5 of a second.
+So the transition affects the transformation property stated above it.
+So you can see it's a nice easing function, but our link is still sitting on top. In order to fix this, we will use a z-index property.
+The z-index property is responsible for elements stacked upon each other in the third dimension. So we have our X and our Y coordinates, but these are our Z coordinates.
+So what we want to do to affect this, is we will set the z-index of our dropdown menu to "-1".
+But by setting it to "-1", it will always be lower than other elements that are neighboring it or competing with it for visibility.
+So we set the z-index to "-1", and save our changes so the dropdown menu by default now has the z-index of "-1".
+Let's go back out and have a look at it. Test, refresh, and there you have it.
+Very useful, very effective, very professional use of the elements we've been discussing.

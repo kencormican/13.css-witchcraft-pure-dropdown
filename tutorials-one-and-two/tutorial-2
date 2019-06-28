@@ -1,0 +1,33 @@
+Pure CSS Dropdown: Styling The Menu Items
+*****************************************
+
+What is it? A pure CSS menu with list items.
+What does it do? It falls down smoothly and shows the list items .
+How do you use it? You can use it navigation or in the footer
+
+
+We now have our basics in place. Let's look at styling our list items a little more. 
+
+Okay let's change our position to "absolute". We're going to fix our menu items for the time being. We will position them more dynamically in the last video. So "position: absolute", "left: 0", "right" is equal to "0", and the width is 150px.
+So our dropdown menu will match our button width as well. Also let's set the top to zero as well. So we're setting a fixed position for our menu you can see here. From there, then we will move it down 50px from the top, so it will display at the bottom of our dropdown button.
+And as we go through this, it'll get more and more dynamic. The goal is to hide it behind the dropdown button and only reveal it on hover. So let's set the top to 50px here and in our test environment, which is really useful in developer tools.
+And let's go back and set those values in our CSS file. The developer tools is a great tool for doing some quick tests, and you can get instant feedback.
+
+
+Now we're going to set some shadow here, so we're going to "cssmatic.com". And we can set some shadow for our menu items quiz. We'd like a little bit of drop shadow to appear when our when our list is exposed or drops down beneath the button.
+So you can play around with these and get your radius and get your styles and copy the result then from that mustard pane. And we're going to paste it in. So we now have a box shadow based on the settings that we used in "cssmatic".
+Refresh And you can see that there's a dropdown around these.
+
+Set our text-decoration to "none" for our links. Again, that's tradition. Modern hyperlinks don't use the underline. Let's add some additional styles to our links. Set the display to "block".
+Set our background-color to an off-white.  What we'll do next is we will style the hover state for the dropdown links. o as we hover over each link, the text color will invert so the color text color will become white, and the background color will invert.
+There you go. 
+
+You can still see that there's padding on the left-hand side there. You can see that the developer tools is highlighting that in green. So we will clear that, and our goal then is to center align our link text.
+So let's do that now. And to do this, the first thing we do is we clear out any default padding for the dropdown menu. We set it to "0", do a refresh, and you can see it's hugging the left-hand side, but we'd like to center align our link items.
+So we will go back to our CSS file, and we'll make those changes, and we'll set the text to be centered.  
+
+What we'd like to do now is style our rollovers, our hover, as we go over the menu items. Style them in such a way that the transitions are softer. So we'll put a slight delay, and in order to do that we will use transitions.
+So let's go back to our CSS and add a transition property into our dropdown link class. And we will specify the background color. So the change in background color will take 0.5 of a second ease-in, ease-out, and the color change will take 0.5 of a second.
+
+So as you can see, it's really coming along nicely now.
+The transitions are soft, and we're ready to move on.

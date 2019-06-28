@@ -1,0 +1,28 @@
+Pure CSS Dropdown: Putting The Basics In Place
+**********************************************
+
+What is it? A pure CSS menu with list items.
+What does it do? It falls down smoothly and shows the list items .
+How do you use it? You can use it navigation or in the footer
+
+
+Over the next three units, we're going to construct a dropdown navigation menu widget that's made entirely from CSS and HTML, no JavaScript.
+
+So in order to do that, let's set up a new project with an "index.HTML" page, and we'll set up a CSS, "main.CSS", and we're going to use a nav element with a class of "navDefault".
+Within that, we'll have a button and the text, and that will be "Dropdown". We'll use that button to hide and reveal list items, which are the core.
+
+We've already created some navDefault CSS here. You can see the position is fixed, similar to what we've done in other labs. 
+
+So let's style our button.
+We set the border to "none", and we set our background color, and we set the width to 150 pixels. Our height will be fixed, 50 pixels. And we'll set the text color to be white, so it'll stand out against the background color of blue.
+And we'll set our cursor to "pointer", which is essentially like a hand, which is a visual indicator to the user that this element is clickable. And as is common with buttons and navigation elements, the text will be set to uppercase.
+Let's test it. You can see there; there's our white text on our blue background for the button, which sits on top of our navDefault.
+
+Now, since the very early days of the web, lists have been used to lay out menu items in navigation components, and we're going to continue that tradition here. So in our example, we're going to create an unordered list that will have a dropdown menu as its class.
+And the child of that element will be a list item that will have a class called "dropdownItem". And that list item will contain an anchor tag, and the class associated with that anchor tag will be "dropdownLink".
+The text within the dropdown link (you see the curly braces here) will display "Link". And what we'll do is we'll create multiple instances of these items. So "dropdownItem*4", hit your tab, and it will create 4 list items.
+Pretty nice. And these can be filled in eventually. The hrefs hyperlink to elements within your imaginary website. Let's see it here, and you can see the links here.
+
+
+As is tradition also, when working with navigation elements, you remove any formatting, such as the bullet points on an unordered list. So let's style our dropdown menu.
+So we set the list-style to "none". That removes those. And let's set some margin. Do a refresh, and we have our basics in place. So in the remaining two labs, we will build on these.

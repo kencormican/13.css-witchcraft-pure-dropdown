@@ -1,0 +1,49 @@
+.navDefault {
+    position: fixed; /*nav Menu fixed*/
+    top: 0;
+    left: 0;
+    right:0;
+    background-color: #4a4a4f; /*charcoal*/
+    
+}
+
+button {
+    border: none;
+    
+    background-color: #0997d3; /*light blue*/
+    width: 150px;
+    height: 50px;
+    color: #fff; /*White text*/ 
+    text-transform: uppercase;
+    cursor: pointer; /*hand pointer to indicate it's clickable*/
+}
+
+.dropdownMenu {
+    list-style: none; /*removes bullet points*/
+    margin:0;
+    padding: 0; /*removes default padding from menu*/
+    position: absolute; /*make menu position absolute*/
+    left: 0;
+    right: 0;
+    text-align: center; /*center aligns menu text*/
+    width: 150px; /*make menu same width as button*/
+    
+    
+    box-shadow: 20px 11px 34px -6px rgba(0,0,0,0.75); /*taken from cssmatic*/
+}
+
+.dropdownLink  {
+    text-decoration: none; /*tradition...remove underline*/
+    display: block;
+    background-color: #f9f9f9; /*off-white*/
+    color: #4a4a4f;
+    padding: 10px 5px;
+    transition: background-color .5s ease-in-out, color .5s ease-out; 
+    /*add trasnsition delay to hover state*/
+    
+}
+
+.dropdownLink:hover {
+    color: #fff; /*white*/
+    background-color: #a0a0a3; /*grey*/
+}
